@@ -17,7 +17,10 @@
 		"i18n:parse": "i18next --config i18next-parser.config.ts && prettier --write \"src/lib/i18n/**/*.{js,json}\"",
 		"cy:open": "cypress open",
 		"test:frontend": "vitest --passWithNoTests",
-		"pyodide:fetch": "node scripts/prepare-pyodide.js"
+		"pyodide:fetch": "node scripts/prepare-pyodide.js",
+		"tauri": "tauri",
+		"desktop:dev": "tauri dev",
+		"desktop:build": "tauri build"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "3.2.2",
@@ -25,6 +28,7 @@
 		"@sveltejs/kit": "^2.5.20",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@tailwindcss/typography": "^0.5.13",
+		"@tauri-apps/cli": "^1.5.9",
 		"@typescript-eslint/eslint-plugin": "^6.17.0",
 		"@typescript-eslint/parser": "^6.17.0",
 		"autoprefixer": "^10.4.16",
@@ -57,6 +61,7 @@
 		"@mediapipe/tasks-vision": "^0.10.17",
 		"@pyscript/core": "^0.4.32",
 		"@sveltejs/adapter-node": "^2.0.0",
+		"@tauri-apps/api": "^1.5.3",
 		"@tiptap/core": "^2.10.0",
 		"@tiptap/extension-code-block-lowlight": "^2.10.0",
 		"@tiptap/extension-highlight": "^2.10.0",
@@ -71,6 +76,7 @@
 		"crc-32": "^1.2.2",
 		"dayjs": "^1.11.10",
 		"dompurify": "^3.1.6",
+		"es6-promise": "^4.2.8",
 		"eventsource-parser": "^1.1.2",
 		"file-saver": "^2.0.5",
 		"fuse.js": "^7.0.0",
